@@ -1,1 +1,31 @@
-
+#CALCULATOR
+def add(a,b):
+    return a+b
+def subtract(a,b):
+    return a-b
+def multiply(a,b):
+    return a*b
+def division(a,b):
+    return a/b
+while True:
+    num1=int(input("Enter the first no:"))
+    if num1=="quit":
+        break
+    operation=input("enter The operation(+,-,*,/):")
+    if operation=="quit":
+        break
+    
+    num2=int(input("Enter the second no :"))
+    if num2=="quit":
+        break
+    
+    if operation=="+":
+        result=add(float(num1),float (num2))
+    elif operation=="-":
+        result=subtract(float(num1),float(num2))
+    elif operation=="*":
+        result=multiply(float(num1),float(num2)) 
+    elif operation=="/":
+        result=division(float(num1),float(num2))
+    
+    print("The result is:",result) 
